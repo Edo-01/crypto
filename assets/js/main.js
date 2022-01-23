@@ -1,7 +1,7 @@
 //JS
 "use strict";
 
-
+ 
 // gestione lingue
 let elemLanguage = document.querySelector('.container-1-header-col-2');
 let iconLanguage = document.querySelector('#icon-language');
@@ -159,7 +159,7 @@ logo.addEventListener('mouseenter', function() {
     }
 })
 logo.addEventListener('mouseleave', function() {
-    if(logo.src.length < 65) {
+    if(logo.src.length > 65) {
         logo.src = 'assets/img/logo-colore.png';
     } else {
         logo.src = 'assets/img/logo.png';
