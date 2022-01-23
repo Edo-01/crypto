@@ -366,6 +366,7 @@ body {
 .container-3 img:first-of-type { /* ------- gestisce la bolla di sinistra -------- */
     position: relative;
     bottom: 50px;
+    z-index: -1;
 }
 .container-3 h2 {
     font-weight: bold;
@@ -599,6 +600,8 @@ body {
     }
    /* fine sezione uno*/
 
+
+
    /* ------- Inizio Seconda sezione -------- */
    .container-3 {
        display: flex;
@@ -609,8 +612,10 @@ body {
    .testo-container-3 {
        align-self: flex-start;
        width: 100%;
+       position: relative;
+       top: -40px;
    }
-   .container-3 img { /* ------- gestisce entrebe le immagini delle bolle -------- */
+   .container-3 img { /* ------- gestisce entrebe le immagini delle bolle -------- */  
        align-self: flex-end;
        width: 20%;
    }
@@ -626,5 +631,6 @@ body {
        position: relative;
        top: -40px;
    } 
+ 
 
 }
