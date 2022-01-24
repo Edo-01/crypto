@@ -831,6 +831,15 @@ body {
     animation-play-state: running;
     animation-timing-function: linear;
 }
+.ombra-background {
+    width: 350px;
+    height: 700px;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    z-index: -10;
+    background: radial-gradient(64.64% 40.2% at 38.96% 56.13%, rgba(0, 255, 255, 0.12) 0%, rgba(32, 36, 43, 0.12) 100%);
+}
 
 
 }
