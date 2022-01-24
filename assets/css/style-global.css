@@ -148,7 +148,7 @@ a {
 }
 body {
     background-color: #20242B;
-    height: 2500px;;  
+     
 }
 #logo {
     cursor: pointer;
@@ -383,6 +383,53 @@ body {
     font-size: 18px;
     line-height: 26px;
 }
+/* ------- Fine Seconda sezione -------- */
+
+
+
+
+/* ------- inizio terza sezione -------- */
+.container-4 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 60%;
+   margin:auto;
+   padding: 40px;
+   height: auto;
+   position: relative; 
+   top: -100px; 
+}
+.img-back {      /* ------- immagine background -------- */
+    position: absolute;
+    z-index: -1;
+    width: 75%;
+}
+.contain-skill {
+    background-color: #292E37;
+    box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    width: 250px;
+    padding: 20px 30px;
+}
+.contain-skill h3 {
+    padding-top: 15px;
+    line-height: 27px;
+}
+.sez-4-row-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 80px;
+}
+.sez-4-row-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
 
 
 
@@ -417,6 +464,9 @@ body {
         font-size: 65px;
     }
      */
+     .container-4 {
+         top: -60px;
+     }     
 }
 
 /*MOBILE*/
@@ -631,6 +681,59 @@ body {
        position: relative;
        top: -40px;
    } 
+
+
+   /* ------- Inizio terza sezione -------- */
+
+
+   .container-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin:auto;
+    padding: 10px;
+    height: auto;
+    position: relative; 
+    top: -85px;
+ }
+ .img-back {      /* ------- immagine background -------- */
+     position: absolute;
+     z-index: -1;
+     width: 75%;
+ }
+ .contain-skill {
+     background-color: #292E37;
+     box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.25);
+     border-radius: 30px;
+     width: 49%;
+     padding: 20px 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ .contain-skill h3 {
+     padding-top: 15px;
+     line-height: 25px;
+     font-weight: 400;
+     text-align: center;
+     font-size: 18px;
+ }
  
+ .sez-4-row-1 {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     padding-bottom: 45px;
+ }
+ .sez-4-row-2 {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+ }
+ 
+
+
 
 }
