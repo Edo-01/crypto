@@ -631,7 +631,6 @@ body {
       z-index: 0;
   }
   .row6-n3-seconda {
-   
     display: flex;
     flex-direction: row;
     width:80%;
@@ -642,8 +641,6 @@ body {
     z-index: 0;
     background: radial-gradient(40.15% 40.15% at 50% 50%, rgba(255, 0, 213, 0.63) 0%, rgba(32, 36, 43, 0) 100%);
   }
-
-
   .contain-token {
     padding: 0px 12px;
     width: 400px;
@@ -1076,13 +1073,11 @@ body {
     overflow: hidden;
     margin-top: -40px;
 }
-.cont-5-col-2 img {
-    width: 100%;
-    animation-name: ruotaa;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-timing-function: linear;
+
+.sez-5-col-1-container-btn  {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .ombra-background {
     width: 350px;
@@ -1095,6 +1090,16 @@ body {
 }
 .cont-5-col-2 {
     display: none;
+}
+.boll-5 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 80px;
+}
+.boll-5 img {
+    width: 50%;
+    max-width: 280px;
 }
 
 /*sezione 6*/
@@ -1110,7 +1115,7 @@ body {
     padding: 70px 15px;
     background: radial-gradient(40.15% 40.15% at 50% 50%, rgba(0, 255, 255, 0.44) 0%, rgba(32, 36, 43, 0) 100%);
     z-index: 0;
-    border: 1px solid green;
+    
  }
  .contain-token {
     padding: 0px 12px;
@@ -1157,5 +1162,47 @@ body {
     width: 50%;
     z-index: -1;
 }
+
+
+
+
+
+
+
+
+.row6-n3-seconda {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 70px 15px;
+    z-index: 0;
+    background: radial-gradient(40.15% 40.15% at 50% 50%, rgba(255, 0, 213, 0.63) 0%, rgba(32, 36, 43, 0) 100%);
+}
+.contain-token-secondo {
+  padding: 0px 12px;
+  width: 100%;
+  height: 140px;
+  background-color: #292E37;
+  box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+
+.contain-token-secondo h2 {
+    font-size: 30px;
+}
+.contain-token-secondo h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
 
 }
