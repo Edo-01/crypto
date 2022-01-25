@@ -183,3 +183,21 @@ chiudiMenu.addEventListener('click', function() {
 
 
 // aproi e chiudi menu
+
+
+
+// auto scritta titolo
+
+var quoteArray = ["A decentralized platform for the future DeFi generations"];
+var textPosition = 0;
+var speed = 70;
+
+function typewriter() {
+  document.querySelector("#quote").innerHTML = quoteArray[0].substring(0, textPosition) + '<span id="lampeggia">_</span>';
+
+  if(textPosition++ != quoteArray[0].length)
+    setTimeout(typewriter, speed);
+}
+window.addEventListener('load', typewriter);
+
+// auto scritta titolo

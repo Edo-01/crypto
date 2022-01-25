@@ -24,10 +24,37 @@
 }
 ::selection {
   background: #FF00D530;
+  color: #000;
 }
 ::-moz-selection {
   background: #FF00D530;
+  color: #000;
 } 
+
+
+/* scritta auto composta CURSORE */
+
+#lampeggia{
+    animation: blinker 1s linear infinite;
+    color: lightseagreen;
+    background: linear-gradient(to right, #ffffff00,lightseagreen);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+@keyframes blinker{
+  50%{
+    opacity: 0;
+   }
+}
+#quote {
+    height: 275px;
+}
+
+/* scritta auto composta */
+
+
 
 
 @keyframes sfumatura-entrata {
@@ -302,7 +329,7 @@ body {
     font-weight: bold;
     font-size: 73px;
     line-height: 73px;
-    padding-bottom: 55px;
+    /* padding-bottom: 55px; */
 }
 .sez-1-col-1 p {
     padding-bottom: 55px;
@@ -520,6 +547,10 @@ body {
         padding: 0px 50px;
         margin-top: -170px;
     }
+    #quote {
+        height: 350px;
+    }
+    
          
 }
 
