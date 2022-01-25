@@ -159,8 +159,6 @@
 
 
 
-
-
 h1,
 h2,
 h3,
@@ -607,6 +605,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding-bottom: 75px;
   }
   .row6-n1 h2 {
       text-align: center;
@@ -729,10 +728,101 @@ body {
     padding-bottom: 65px;
 }
 
+/* -------------------------------fine  sezione 6 ----------------------------------------*/
+/* -------------------------------Inizio  sezione 7 ----------------------------------------*/
 
 
 
-/* fine  sezione 6 */
+.cont-7-row-1 {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 45px;
+}
+
+.cont-7-row-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.box-distribution {
+    width: 70%;
+    max-width: 1200px;
+    padding-bottom: 42px;
+}
+
+.testo-distribution {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+}
+.testo-distribution h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+.testo-distribution p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: right;
+    letter-spacing: 0.03em;
+}    
+.misuratore-back {
+    height: 22px;
+    background: #38404C;
+    border-radius: 30px;
+}
+.misuratore-colore {
+    width: 2%;
+    height: 22px;
+    background: linear-gradient(90deg, #00FFFF 0%, #FF00D5 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+.misuratore-pieno-1 {
+    width: 100%;
+    transition: 2s;
+}
+.misuratore-pieno-2 {
+    width: 50%;
+    transition: 2s;
+    transition-delay: 0.2s;
+}
+.misuratore-pieno-3 {
+    width: 27%;
+    transition: 2s;
+    transition-delay: 0.4s;
+}
+.misuratore-pieno-4 {
+    width: 10%;
+    transition: 2s;
+    transition-delay: 0.6s;
+}
+.misuratore-pieno-5 {
+    width: 5%;
+    transition: 2s;
+    transition-delay: 0.8s;
+}
+.misuratore-pieno-6 {
+    width: 5%;
+    transition: 2s;
+    transition-delay: 1s;
+}
+
+
+
+
+
+
+
+
 
 
 
