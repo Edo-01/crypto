@@ -23,9 +23,9 @@
         <img id="logo" src="assets/img/logo.png" alt="">
         <div class="nav">
             <ul>
-                <li><a href="#">Start</a></li>
-                <li><a href="#">Buy</a></li>
-                <li><a href="#">Tokenomics</a></li>
+                <li><a id="start" href="#">Start</a></li>
+                <li><a id="buy" href="#">Buy</a></li>
+                <li><a id="token-bott" href="#">Tokenomics</a></li>
                 <li><a href="#">Roadmap</a></li>
                 <li><a href="#">Whitepaper</a></li>
             </ul>
@@ -62,14 +62,14 @@
               <p id="par-desk">Future Whales is a decentralized platform built to meet<br> any defi project's needs.</p>
               <p id="par-mobile">Future Whales is a decentralized<br> platform built to meet any defi<br> project's needs.</p>
               <div  class="sez-1-col-1-container-btn">
-                  <div class="cont-btn">
+                  <div  class="cont-btn">
                      <a class="bottone-blue" href="#">WHITEPAPER</a>
                   </div>
                   <div class="cont-btn">
                      <a class="bottone-blue" href="#">BUY NOW</a>
                   </div>
               </div>
-                <img src="assets/img/composizioneUno.png" alt="">
+                <img id="progetto" src="assets/img/composizioneUno.png" alt="">
           </div>
           <div class="sez-1-col-2">
             <picture>
@@ -83,8 +83,8 @@
     <section>
         <div class="container-3">
             <img src="assets/img/gruppo-bolle-sez-2.png" alt="">
-            <div class="testo-container-3">
-                <h2>Project and Platform</h2>
+            <div  class="testo-container-3">
+                <h2 >Project and Platform</h2>
                 <p>Starting from BSC, Future Whales aims to be the game-changer of launchpad platforms,<br> 
                     providing DeFi tools for businesses & holders ensuring<br> the holders invest only in safe 
                     and trusted projects. <br>This project was created to avoid investors being scammed 
@@ -139,7 +139,7 @@
                 <p>To trade $Whales token you will need to use PancakeSwap and in the Near Future we will apply 
                     for exchanges to list our token. We also have a full guide on how to purchase the token, 
                     also, you can purchase it by clicking the buy button.</p>
-                <div class="sez-1-col-1-container-btn">
+                <div class="sez-5-col-1-container-btn ">
                     <div class="cont-btn">
                         <a class="bottone-blue" href="#">HOW TO BUY</a>
                      </div>
@@ -150,11 +150,96 @@
                 <aside class="ombra-background"></aside>
             </div>
             <div class="cont-5-col-2">
-                <img src="assets/img/rotella.png" alt="">
+                <img id="buy-rotella" src="assets/img/rotella.png" alt="">
             </div>
         </div>
     </section>
 </div>
+
+
+    <section>
+        <div class="boll-5">
+            <img id="token-bolle" src="assets/img/bolle-sez-5.png" alt="">
+        </div>
+    </section>
+
+    <section>
+        <div class="section-6">
+            <div class="row6-n1">
+               <h2>Tokenomics</h2>
+               <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has<br> roots in a 
+                piece of classical Latin literature from 45 BC, making it.</p>
+            </div>
+            <div class="row6-n2">
+                <div class="base-switch">
+                    <div class="sx" onclick="muoviSx()">
+                        Buy
+                    </div>
+                    <div class="dx" onclick="muoviDx()">
+                        Sell
+                    </div>
+                    <div class="pallina">
+                    </div>
+                </div>
+            </div>
+            <div id="cont-primo" class="row6-n3">
+                <div class="sez-6-row-1">
+                    <div class="contain-token">
+                        <h2>5<span id="mini">%</span></h2>
+                        <h3>Buy Tax</h3>
+                        <div class="sez-6-tondino"></div>
+                    </div>
+                    <div class="contain-token">
+                        <h2>2<span id="mini">%</span></h2>
+                        <h3>Redistribution</h3>
+                        <div class="sez-6-tondino"></div>
+                    </div>
+                </div>
+                <div class="sez-6-row-2">
+                    <div class="contain-token">
+                        <h2>1<span id="mini">%</span></h2>
+                        <h3>Marketing</h3>
+                        <div class="sez-6-tondino"></div>
+                    </div>
+                    <div class="contain-token">
+                        <h2>2<span id="mini">%</span></h2>
+                        <h3>Buyback and burn</h3>
+                        <div class="sez-6-tondino"></div>
+                    </div>              
+                </div>
+                <img class="img-back-grafico" src="assets/img/grafico.png" alt=""> <!--immagine back-->
+            </div>
+            <!--eleme nascosto-->
+            <div class="row6-n3-seconda" style="display:none;" id="cont-secondo">
+                <div class="sez-6-row-1">
+                    <div class="contain-token-secondo">
+                        <h2>15<span id="mini">%</span></h2>
+                        <h3>Sell Tax</h3>
+                        <div class="sez-6-tondino"></div>
+                    </div>
+                    <div class="contain-token-secondo">
+                        <h2>3<span id="mini">%</span></h2>
+                        <h3>Reflection</h3>
+                        <div class="sez-6-tondino"></div>
+                    </div>
+                </div>
+                <div class="sez-6-row-2">
+                    <div class="contain-token-secondo">
+                        <h2>8<span id="mini">%</span></h2>
+                        <h3>Marketing</h3>
+                        <div class="sez-6-tondino"></div>
+                    </div>
+                    <div class="contain-token-secondo">
+                        <h2>4<span id="mini">%</span></h2>
+                        <h3>Buyback</h3>
+                        <div class="sez-6-tondino"></div>
+                    </div>              
+                </div>
+                <img class="img-back-grafico" src="assets/img/grafico.png" alt=""> <!--immagine back-->
+            </div>
+             <!-- fine eleme nascosto-->
+        </div>
+    </section>
    
        
     

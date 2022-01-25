@@ -165,6 +165,10 @@ logo.addEventListener('mouseleave', function() {
         logo.src = 'assets/img/logo.png';
     }
 })
+logo.addEventListener('click', function(){
+    event.preventDefault();
+    document.body.scrollIntoView({behavior: 'smooth'});
+});
 
 
 
@@ -184,8 +188,6 @@ chiudiMenu.addEventListener('click', function() {
 
 // aproi e chiudi menu
 
-
-
 // auto scritta titolo
 
 var quoteArray = ["A decentralized platform for the future DeFi generations"];
@@ -201,3 +203,57 @@ function typewriter() {
 window.addEventListener('load', typewriter);
 
 // auto scritta titolo
+
+
+// SWITCH
+let pallina = document.querySelector('.pallina');
+
+function muoviDx() {
+    pallina.className = 'pallina-dx';
+}
+
+ function muoviSx() {
+    pallina.className = 'pallina';
+}
+// SWITCH
+
+let dx = document.querySelector('.dx');
+let sx = document.querySelector('.sx');
+let contPrimo = document.querySelector('#cont-primo');
+let contSecondo = document.querySelector('#cont-secondo');
+
+
+dx.addEventListener('click', function() {
+   contPrimo.style.display = 'none';
+   contSecondo.removeAttribute('style');
+});
+
+sx.addEventListener('click', function() {
+    contSecondo.style.display = 'none';
+    contPrimo.removeAttribute('style');
+ });
+
+
+ let pippo = document.querySelector('#start');
+ let progetto =  document.querySelector('#progetto');
+ let buy = document.querySelector('#buy');
+ let buyRotella = document.querySelector('#buy-rotella');
+ let tokenBott = document.querySelector('#token-bott');
+ let tokenBolle = document.querySelector('#token-bolle');
+ 
+ 
+
+ pippo.addEventListener('click', function() {
+     event.preventDefault();
+   progetto.scrollIntoView({behavior: 'smooth'});
+ });
+
+ buy.addEventListener('click', function() {
+    event.preventDefault();
+    buyRotella.scrollIntoView({behavior: 'smooth'});
+});
+
+tokenBott.addEventListener('click', function() {
+    event.preventDefault();
+    tokenBolle.scrollIntoView({behavior: 'smooth'});
+});
