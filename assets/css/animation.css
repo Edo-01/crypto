@@ -1,0 +1,118 @@
+/*animation*/
+
+/* scritta auto composta CURSORE */
+#lampeggia{
+    animation: blinker 1s linear infinite;
+    color: lightseagreen;
+    background: linear-gradient(to right, #ffffff00,lightseagreen);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+@keyframes blinker{
+  50%{
+    opacity: 0;
+   }
+}
+#quote {
+    height: 275px;
+}
+/* scritta auto composta */
+/* bottoni */
+@keyframes sfumatura-entrata {
+    0% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 0.31%, #901D7D 106.01%);}
+    10% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 10%, #901D7D 106.01%);}
+    20% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 20%, #901D7D 106.01%);}
+    30% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 30%, #901D7D 106.01%);}
+    40% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 40%, #901D7D 106.01%);}
+    50% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 50%, #901D7D 106.01%);}
+    60% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 60%, #901D7D 106.01%);}
+    70% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 70%, #901D7D 106.01%);}
+    80% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 80%, #901D7D 106.01%);}
+    90% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 90%, #901D7D 106.01%);}
+    100% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 100.33%, #901D7D 106.01%);}
+  }
+  @keyframes sfumatura-uscita {
+    0% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 100.33%, #901D7D 106.01%);}
+    10% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 90%, #901D7D 106.01%);}
+    20% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 80%, #901D7D 106.01%);}
+    30% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 70%, #901D7D 106.01%);}
+    40% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 60%, #901D7D 106.01%);}
+    50% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 50%, #901D7D 106.01%);}
+    60% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 40%, #901D7D 106.01%);}
+    70% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 30%, #901D7D 106.01%);}
+    80% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 20%, #901D7D 106.01%);}
+    90% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 10%, #901D7D 106.01%);}
+    100% {background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 0.31%, #901D7D 106.01%);}
+  }
+  .bottone-enter {
+    animation-name: sfumatura-entrata;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear; 
+  }
+  .bottone-leave {
+    background: radial-gradient(98.38% 585.64% at 94.41% 49.85%, #630000 0%, #BAFF00 0%, #076D61 99.97%);
+    animation-name: sfumatura-uscita ;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }   
+  @keyframes sfumaturaBlue-entrata {
+    0% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE -0.06%, #00FFFF 102.55%);}
+    10% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 10%, #00FFFF 102.55%);}
+    20% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 20%, #00FFFF 102.55%);}
+    30% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 30%, #00FFFF 102.55%);}
+    40% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 40%, #00FFFF 102.55%);}
+    50% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 50%, #00FFFF 102.55%);}
+    60% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 60%, #00FFFF 102.55%);}
+    70% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 70%, #00FFFF 102.55%);}
+    80% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 80%, #00FFFF 102.55%);}
+    90% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 90%, #00FFFF 102.55%);}
+    100% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 100.15%, #00FFFF 102.55%);}
+  }
+  @keyframes sfumaturaBlue-uscita {
+    0% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 100.15%, #00FFFF 102.55%);}
+    10% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 90%, #00FFFF 102.55%);}
+    20% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 80%, #00FFFF 102.55%);}
+    30% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 70%, #00FFFF 102.55%);}
+    40% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 60%, #00FFFF 102.55%);}
+    50% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 50%, #00FFFF 102.55%);}
+    60% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 40%, #00FFFF 102.55%);}
+    70% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 30%, #00FFFF 102.55%);}
+    80% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 20%, #00FFFF 102.55%);}
+    90% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE 10%, #00FFFF 102.55%);}
+    100% {background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE -0.06%, #00FFFF 102.55%);}
+  }
+  .bottone-enter-blue {
+    animation-name: sfumaturaBlue-entrata;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear; 
+  }
+  .bottone-leave-blue {
+    background: radial-gradient(98.38% 585.64% at 94.41% 49.85%, #630000 0%, #BAFF00 0%, #076D61 99.97%);
+    animation-name: sfumaturaBlue-uscita ;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }   
+  @keyframes su-giu {
+      0% {transform: translateY(0px);}
+      50% {transform: translateY(-4px);}
+      100% {transform: translateY(0px);}
+    }
+  .btn-sugiu {
+      animation-name: su-giu;
+      animation-duration: 0.35s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+    }
+    /* bottoni */
+    @keyframes ruotaa {
+       from {transform: rotate(0deg);}
+       to {transform: rotate(360deg);}
+    }
+  
+  
