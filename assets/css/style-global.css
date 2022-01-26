@@ -610,7 +610,10 @@ body {
 /* -------------------------------fine  sezione 6 ----------------------------------------*/
 /* -------------------------------Inizio  sezione 7 ----------------------------------------*/
 
-
+.container-7 {
+    border: 1px solid red;
+    position: relative;
+}
 
 .cont-7-row-1 {
     text-align: center;
@@ -693,6 +696,12 @@ body {
     width: 5%;
     transition: 2s;
     transition-delay: 1s;
+}
+.cont-7-img-abso {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
 }
 
 
