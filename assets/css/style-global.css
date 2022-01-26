@@ -1112,6 +1112,7 @@ body {
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+    position: relative;
   }
   .section-6 {
     display: flex;
@@ -1119,6 +1120,10 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+.sez-6-tondino {
+    position: absolute;
+    top: 0px;
 }
 
 .sez-6-row-1 {
@@ -1132,7 +1137,7 @@ body {
     font-size: 30px;
 }
 .contain-token h3 {
-    font-size: 20px;
+    font-size: 19px;
     text-align: center;
 }
 #mini {
@@ -1176,6 +1181,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: 0.5s;
+  position: relative;
 }
 
 
@@ -1186,6 +1192,30 @@ body {
     font-size: 20px;
     text-align: center;
 }
+.sez-6-row-1 .contain-token:first-of-type {
+    margin-bottom: 100px;
+}
+.sez-6-row-2 .contain-token:first-of-type {
+  margin-bottom: 100px;
+}
+.sez-6-row-1 .contain-token-secondo:first-of-type {
+  margin-bottom: 100px;
+}
+.sez-6-row-2 .contain-token-secondo:first-of-type {
+margin-bottom: 100px;
+}
+
+
+
+
+/* sezione 7 */
+
+.box-distribution {
+    width: 90%;
+    max-width: 1200px;
+    padding-bottom: 42px;
+}
+
 
 
 }
