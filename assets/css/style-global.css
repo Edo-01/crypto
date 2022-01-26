@@ -611,7 +611,6 @@ body {
 /* -------------------------------Inizio  sezione 7 ----------------------------------------*/
 
 .container-7 {
-    border: 1px solid red;
     position: relative;
 }
 
@@ -1196,6 +1195,7 @@ body {
 
 .contain-token-secondo h2 {
     font-size: 30px;
+    
 }
 .contain-token-secondo h3 {
     font-size: 20px;
@@ -1224,6 +1224,11 @@ margin-bottom: 100px;
     max-width: 1200px;
     padding-bottom: 42px;
 }
+.cont-7-row-1 {
+    padding-bottom: 70px;
+}
+
+
 
 
 
