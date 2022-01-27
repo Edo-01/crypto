@@ -851,6 +851,7 @@ body {
 
 .container-9 {
     padding-top: 110px;
+    padding-bottom: 80px;
 }
 
 .cont-9-row-1 {
@@ -887,6 +888,66 @@ body {
     margin-left: 0px;
 }
 
+
+
+
+/* sezione 10 */
+
+
+.container-10 {
+    width: 70%;
+    max-width: 900px;
+    background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE -0.06%, #00FFFF 102.55%);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    border-radius: 40px;
+    padding-bottom: 50px;
+}
+.cont-10-row-1 {
+    margin: auto;
+    text-align: center;
+    padding: 50px 0px 40px 0px;
+}
+.cont-10-row-1 h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 43px;
+}
+.sfondo-contatore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 20px 20px;
+}
+.contatore-orario {
+    background: linear-gradient(90deg, #005A72 0%, #00B8B8 104.5%);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 170px;
+    padding: 7px 0px;
+    text-align: center;
+}
+.sfondo-contatore h3 {
+    font-size: 55px;
+}
+.cont-data-name {
+    width: 170px;
+    text-align: center;
+}
+.cont-bott-presale {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.botton-presale {
+border-radius: 25px;
+padding: 18px 120px;
+text-decoration: none;
+background-color: #fff;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: #000;
+}
 
 
 
@@ -1561,7 +1622,70 @@ margin-bottom: 100px;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    margin-left: 20px;
 }
+.cont-9-col33:first-of-type {
+    margin-left: 0px;
+}
+
+
+/* ----------------sezione countdown------------------- */
+
+.container-10 {
+    width: 93%;
+    max-width: 900px;
+    background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE -0.06%, #00FFFF 102.55%);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    border-radius: 40px;
+    padding-bottom: 50px;
+}
+.cont-10-row-1 {
+    margin: auto;
+    text-align: center;
+    padding: 50px 0px 40px 0px;
+}
+.cont-10-row-1 h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 43px;
+}
+.sfondo-contatore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 20px 20px;
+}
+.contatore-orario {
+    background: linear-gradient(90deg, #005A72 0%, #00B8B8 104.5%);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 20%;
+    padding: 7px 0px;
+    text-align: center;
+}
+.sfondo-contatore h3 {
+    font-size: 40px;
+}
+.cont-data-name {
+    width: 100px;
+    text-align: center;
+}
+.cont-bott-presale {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.botton-presale {
+border-radius: 25px;
+padding: 18px 120px;
+text-decoration: none;
+background-color: #fff;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: #000;
+}
+
 
 
 
