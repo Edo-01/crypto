@@ -165,6 +165,31 @@ body {
     padding-bottom: 22px;
 }
 
+.back-popup-two {
+    z-index: 10;
+    background-color: #292E37;
+    box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.25);
+    padding: 30px 40px 35px 40px;
+    border-radius: 30px;
+    letter-spacing: 0.01em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top:6300px;
+    left: 38%;
+}
+.back-popup-two img {
+    padding-bottom: 22px;
+}
+
+
+
+
+
+
+
 .container-language {
     background-color: #292E37;
     box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.25);
@@ -949,7 +974,14 @@ padding: 18px 120px;
 text-decoration: none;
 background-color: #fff;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-color: #000;
+color: #005A72;
+font-weight: 600;
+transition: 0.25s;
+}
+.botton-presale:hover {
+    background-color: #005A72;
+    color: #fff;
+    transition: 0.15s;
 }
 
 .esaurito-stile {
@@ -962,8 +994,7 @@ color: #000;
 
 /* sezione 11*/
 
-.container-11 {
-    border: 1px solid red;
+.container-11-desk {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -974,10 +1005,126 @@ color: #000;
     width: 67%;
     background: #292E37;
     box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
+    border-radius: 22px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.container-11-col-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-11-col-1 a {
+    border-radius: 25px;
+    padding: 13px 25px;
+    text-decoration: none;
+    background: linear-gradient(90deg, #901D7D -6.82%, #FF00D5 0.31%, #901D7D 106.01%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container-11-col-1 a {
+    font-weight: bold;
+    font-size: 16px;
+}
+.container-11-col-1 p {
+    color: #fff; /* fix per browsers senza webkit */
+    background: linear-gradient(to left, #ffffff00, #ffffff);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-right: 15px;
+    font-size: 16px;
+    transition: font-size 1s;
+}
+.container-11-col-1 p:hover {
+    color: #fff; /* fix per browsers senza webkit */
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 17px;
+    transition: font-size 1s;
+}
+#key-crypto-ultima {
+    padding-bottom: 135px;
+}
+
+
+/* seizone 12 */
+
+
+.container-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 125px;
+}
+.icon-social {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-12 h2 {
+    padding-bottom: 50px;
+    font-weight: bold;
+    font-size: 43px;
+}
+
+.container-12 p {
+    padding-bottom: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+}
+.icon-social img {
+    transition: 0.2s;
+}
+.icon-social img:hover {
+    transform: scale(1.1 , 1.1);
+    transition: 0.2s;
+}
+
+
+/* footer */
+footer {
+    background-color: #131518;
+    padding: 30px 40px 7px 40px;
+}
+
+.divisore {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(90deg, #00FFFF 0%, #FF00D5 100%);
+    filter: blur(4px);
+}
+.foote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-col-33 {
+    width: 33%;
+}
+.footer-col-33 p {
+    text-align: center;
+    font-size: 13px;
+}    
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1176,7 +1323,7 @@ color: #000;
 
 
      /* fine header*/
-    /* inizio sezione uno*/
+    /* inizio sezione uno*--------------------------------*/
     .container-1-header,
     .container-2-header {
         display: none;
@@ -1726,8 +1873,64 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 color: #000;
 }
 
+/* sezione 12 */
+
+.container-11-desk {
+    display: none;
+}
 
 
+/* seizone 12 */
+
+
+.container-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.icon-social {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+.container-12 h2 {
+    padding: 0px 20px 50px 20px;
+}
+
+.container-12 p {
+    padding: 0px 20px 30px 20px;
+}
+
+/* footer */
+footer {
+    background-color: #131518;
+    padding: 30px 20px 10px 20px;
+}
+
+
+.foote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-col-33 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer-col-33 p {
+    text-align: center;
+    font-size: 13px;
+}   
+.footer-col-33 img {
+   padding-bottom: 25px;
+}  
 
 
 

@@ -102,22 +102,44 @@ let imgPopup = document.createElement('img');
 imgPopup.src = 'assets/img/balena.png';
 imgPopup.classList.add = '';
 
+let buttonCopyKeyDue = document.querySelector('.copy-key-2');
+let posizionePopupUltimo = document.querySelector('#key-crypto-ultima');
+let popupTwo = document.createElement('div');
+popupTwo.classList.add('back-popup-two');  
 
-    buttonCopyKey.addEventListener('click', function() {
-        navigator.clipboard.writeText(keyCrypto)
-            .then(() => {
-            console.log("Text copied to clipboard...");
-            popupOne.append(avviso);
-            popupOne.prepend(imgPopup);
-            document.body.prepend(popupOne);
+buttonCopyKeyDue.addEventListener('click', function() {
+    event.preventDefault();
+    navigator.clipboard.writeText(keyCrypto)
+    .then(() => {
+        console.log("Text copied to clipboard...");
+        popupTwo.append(avviso);
+        popupTwo.prepend(imgPopup);
+        posizionePopupUltimo.prepend(popupTwo);
+
+    }) 
+    .catch(err => {
+        console.log('Something went wrong', err);
+    })   
+});    
+
+
+
+buttonCopyKey.addEventListener('click', function() {
+     navigator.clipboard.writeText(keyCrypto)
+        .then(() => {
+        console.log("Text copied to clipboard...");
+        popupOne.append(avviso);
+        popupOne.prepend(imgPopup);
+        document.body.prepend(popupOne);
         })
-            .catch(err => {
-            console.log('Something went wrong', err);
-        })
-    });
+        .catch(err => {
+        console.log('Something went wrong', err);
+    })
+});
 
 
 document.body.addEventListener('click', function() {
+    popupOne.remove();
     popupOne.remove();
     containerLanguage.remove();
 })
@@ -138,6 +160,7 @@ buttonCopyKeyMob.addEventListener('click', function() {
 
 document.body.addEventListener('click', function() {
     popupOne.remove();
+    popupTwo.remove();
     containerLanguage.remove();
 })
 
