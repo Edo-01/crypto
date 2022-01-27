@@ -952,6 +952,15 @@ color: #000;
 
 
 
+.esaurito-stile {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+}
+
+
+
+
 /*DESK GRANDE*/
 @media only screen and (min-width: 1362px) {
     .cont-8-mob {

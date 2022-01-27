@@ -305,3 +305,71 @@ window.addEventListener('scroll', function() {
         foto4Inizio.classList.remove('step-4-foto-fine');
       }
   });    
+
+
+//   countdown
+
+  let giorni = document.querySelector('#giorni');
+  let ore = document.querySelector('#ore');
+  let minuti = document.querySelector('#minuti');
+  let secondi = document.querySelector('#secondi');
+
+  let bottPresale = document.querySelector('.cont-bott-presale');
+  let avvisoConclusione = document.createElement('h2');
+  let esaurito = document.querySelector('.esaurito');
+  let adesso = new Date();
+
+  console.log(adesso);
+
+
+    var end = new Date('02/27/2022 5:14 PM');
+
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
+
+    function showRemaining() {
+        var now = new Date();
+        var distance = end - now;
+        if (distance < 0) {
+            bottPresale.remove();
+            avvisoConclusione.textContent = 'Time Expired';
+            avvisoConclusione.classList.add('esaurito-stile');
+            esaurito.append(avvisoConclusione);
+
+            return;
+        }
+        var days = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+         if(seconds < 10) {
+            secondi.textContent = '0' + seconds;
+         } else if (seconds >= 10) {
+            secondi.textContent = seconds;
+         }
+         if(minutes < 10) {
+            minuti.textContent = '0' + minutes;
+         } else if (minutes >= 10) {
+            minuti.textContent = minutes;
+         }
+         if(hours < 10) {
+            ore.textContent = '0' + hours;
+         } else if (seconds >= 10) {
+            ore.textContent = hours;
+         }
+         if(days < 10) {
+            giorni.textContent = '0' + days;
+         } else if (seconds >= 10) {
+            giorni.textContent = days;
+         }
+        
+    }
+
+    timer = setInterval(showRemaining, 1000);
+  
+
+    
+    
