@@ -284,3 +284,24 @@ window.addEventListener('scroll', function() {
       misSei.classList.remove('misuratore-pieno-6');
     }
   });
+
+
+
+  let foto1Inizio = document.querySelector('.step-1-foto-inizio');
+  let foto2Inizio = document.querySelector('.step-2-foto-inizio');
+  let foto3Inizio = document.querySelector('.step-3-foto-inizio');
+  let foto4Inizio = document.querySelector('.step-4-foto-inizio');
+
+  window.addEventListener('scroll', function() {
+      if(window.pageYOffset > 3900) {
+        foto1Inizio.classList.add('step-1-foto-fine');
+        foto2Inizio.classList.add('step-2-foto-fine');
+        foto3Inizio.classList.add('step-3-foto-fine');
+        foto4Inizio.classList.add('step-4-foto-fine');
+      } else if (window.pageYOffset < 3899) {
+        foto1Inizio.classList.remove('step-1-foto-fine');
+        foto2Inizio.classList.remove('step-2-foto-fine');
+        foto3Inizio.classList.remove('step-3-foto-fine');
+        foto4Inizio.classList.remove('step-4-foto-fine');
+      }
+  });    
