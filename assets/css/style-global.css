@@ -845,6 +845,10 @@ body {
 }
 
 
+.bolle-sezione-8 {
+    margin-top: -250px;
+}
+
 
 
 
@@ -1486,9 +1490,11 @@ margin-bottom: 100px;
     padding-left: 15px;
 }
 
+.bolle-sezione-8 {
+    display: none;
+}
 
-
-
+/*----------- sezione 9 ------------------*/
 
 
 
