@@ -164,6 +164,7 @@ body {
 .back-popup-one img {
     padding-bottom: 22px;
 }
+
 .container-language {
     background-color: #292E37;
     box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.25);
@@ -709,6 +710,8 @@ body {
 
 .container-8 {
     padding: 0px 80px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(144, 29, 125, 0.54) 0%, rgba(32, 36, 43, 0) 100%);
+    
 }
 .cont-8-row-1 {
     /* border: 1px solid red; */
@@ -899,7 +902,7 @@ body {
     max-width: 900px;
     background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE -0.06%, #00FFFF 102.55%);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
-    margin: auto;
+    margin: 0px auto 80px;
     border-radius: 40px;
     padding-bottom: 50px;
 }
@@ -949,14 +952,42 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 color: #000;
 }
 
-
-
-
 .esaurito-stile {
     text-align: center;
     padding-top: 30px;
     font-size: 40px;
 }
+
+
+
+/* sezione 11*/
+
+.container-11 {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrata {
+    justify-content: center;
+    width: 67%;
+    background: #292E37;
+    box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -88,8 +88,6 @@ contBtn[i].addEventListener('mouseleave', function() {
 
 
 
-
-
 // sezione copia chiave e mostra pop up
 let ElemkeyCrypto = document.querySelector('.key-crypto');
 let keyCrypto = ElemkeyCrypto.textContent;
@@ -104,18 +102,20 @@ let imgPopup = document.createElement('img');
 imgPopup.src = 'assets/img/balena.png';
 imgPopup.classList.add = '';
 
-buttonCopyKey.addEventListener('click', function() {
-    navigator.clipboard.writeText(keyCrypto)
-        .then(() => {
-        console.log("Text copied to clipboard...");
-        popupOne.append(avviso);
-        popupOne.prepend(imgPopup);
-        document.body.prepend(popupOne);
-    })
-        .catch(err => {
-        console.log('Something went wrong', err);
-    })
-});
+
+    buttonCopyKey.addEventListener('click', function() {
+        navigator.clipboard.writeText(keyCrypto)
+            .then(() => {
+            console.log("Text copied to clipboard...");
+            popupOne.append(avviso);
+            popupOne.prepend(imgPopup);
+            document.body.prepend(popupOne);
+        })
+            .catch(err => {
+            console.log('Something went wrong', err);
+        })
+    });
+
 
 document.body.addEventListener('click', function() {
     popupOne.remove();
