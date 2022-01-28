@@ -137,12 +137,13 @@ buttonCopyKey.addEventListener('click', function() {
     })
 });
 
-
 document.body.addEventListener('click', function() {
     popupOne.remove();
-    popupOne.remove();
+    popupTwo.remove();
     containerLanguage.remove();
 })
+
+
 // fine sezione copia chiave e mostra pop up
 
 buttonCopyKeyMob.addEventListener('click', function() {
@@ -445,6 +446,30 @@ window.addEventListener('scroll', function() {
 
     timer = setInterval(showRemaining, 1000);
   
+// popup spigazione HOW TO BUY
 
+    let openDetailHowBuy = document.querySelector('#open-detail-howBuy');
+    let backgroundOscurato = document.createElement('div');
+    backgroundOscurato.classList.add('opacita-globale');
+    let sezioneDettagliBuy = document.querySelector('.dettagli-howToBuy-nascosta');
+    let backPopHowtobuy = document.querySelector('.back-pop-howtobuy');
     
+
+    openDetailHowBuy.addEventListener('click', function() {
+        event.preventDefault();
+        document.body.append(backgroundOscurato);
+        sezioneDettagliBuy.classList.remove('dettagli-howToBuy-nascosta');
+    });
     
+
+
+ 
+
+    document.body.addEventListener('click', function() {
+       if(event.target !== openDetailHowBuy) {
+        sezioneDettagliBuy.classList.add('dettagli-howToBuy-nascosta');
+        backgroundOscurato.remove();
+       }
+    })    
+
+    // popup spigazione HOW TO BUY
