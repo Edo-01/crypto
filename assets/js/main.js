@@ -263,9 +263,14 @@ sx.addEventListener('click', function() {
  let buyRotella = document.querySelector('#buy-rotella');
  let tokenBott = document.querySelector('#token-bott');
  let tokenBolle = document.querySelector('#token-bolle');
- 
+ let roadMap = document.querySelector('#roadMap');
+ let positionScrollRoad = document.querySelector('#position-scroll-road');
  
 
+ roadMap.addEventListener('click', function() {
+    event.preventDefault();
+    positionScrollRoad.scrollIntoView({behavior: 'smooth'});    
+ });    
  pippo.addEventListener('click', function() {
      event.preventDefault();
    progetto.scrollIntoView({behavior: 'smooth'});
@@ -280,6 +285,53 @@ tokenBott.addEventListener('click', function() {
     event.preventDefault();
     tokenBolle.scrollIntoView({behavior: 'smooth'});
 });
+
+
+let startMob = document.querySelector('#start-mob');
+let buyMob = document.querySelector('#buy-mob');
+let tokenomicsMob = document.querySelector('#tokenomics-mob');
+let roadMapMob = document.querySelector('#road-map-mob');
+let scrollMoBuy = document.querySelector('#scroll-mob-buy');
+let logoMob = document.querySelector('#logo-mob');
+let tornaSu = document.querySelector('.torna-su');
+
+
+startMob.addEventListener('click', function() {
+    event.preventDefault();
+    navMob.style.visibility = 'hidden';
+  progetto.scrollIntoView({behavior: 'smooth'});
+});
+buyMob.addEventListener('click', function() {
+    event.preventDefault();
+    navMob.style.visibility = 'hidden';
+    scrollMoBuy.scrollIntoView({behavior: 'smooth'});
+});
+tokenomicsMob.addEventListener('click', function() {
+    event.preventDefault();
+    navMob.style.visibility = 'hidden';
+    tokenBolle.scrollIntoView({behavior: 'smooth'});
+});
+roadMapMob.addEventListener('click', function() {
+    event.preventDefault();
+    navMob.style.visibility = 'hidden';
+    positionScrollRoad.scrollIntoView({behavior: 'smooth'});    
+ });    
+ logoMob.addEventListener('click', function(){
+    event.preventDefault();
+    document.body.scrollIntoView({behavior: 'smooth'});
+});
+tornaSu.addEventListener('click', function(){
+    event.preventDefault();
+    document.body.scrollIntoView({behavior: 'smooth'});
+});
+
+
+
+
+
+
+
+
 
 //barre che si caricano
 let misUno = document.querySelector('#mis-1');

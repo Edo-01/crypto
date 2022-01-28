@@ -36,6 +36,22 @@
   color: #000;
 } 
 
+.torna-su {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: linear-gradient(90deg, #00FFFF00 -3.23%, #0096BE -0.06%, #00FFFF00 102.55%);
+    padding: 26px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+    z-index:100;
+}
+.torna-su:hover {
+    /* background: linear-gradient(90deg, #00FFFF -3.23%, #0096BE -0.06%, #00FFFF 102.55%); */
+    background-color:#3a88b6;
+    transition: 1s;
+}    
 
 
 h1,
@@ -1207,6 +1223,9 @@ footer {
 @media only screen and (max-width: 979px) { 
      body {
         overflow-x: hidden;
+     }
+     .torna-su {
+         display: none;
      }
      .back-popup-one {
         z-index: 10;
