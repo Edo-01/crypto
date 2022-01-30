@@ -1174,14 +1174,25 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 50px 15px 50px;
+    position: sticky;
+    top:0px;
+    left:0px;
+    padding: 10px 50px 10px 50px;
+    background: rgba(32, 36, 43, 0.15);
+    /* filter: blur(9px); */
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 }
+
 .row-pop-how {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 45px 50px 45px 50px;
+}
+.close-pop-how {
+    cursor: pointer;
 }
 .numerazione-how {
     width: 20%;
@@ -1226,7 +1237,15 @@ footer {
 
 /*FINE pop up dettagli how to buy*/
 
-
+.tondino-giallo {
+    background-color: #FDC052;
+}
+.tondino-viola {
+    background-color: #CA8DEE;
+}
+.tondino-verde {
+    background-color: #43E8BA;
+}
 
 
 
@@ -2095,7 +2114,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 20px 15px 10px;
+    padding: 15px 10px 15px 10px;
 }
 .row-pop-how {
     width: 100%;
