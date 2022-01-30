@@ -849,12 +849,13 @@ body {
  } 
  .cont-scheda-road ul {
      padding-left: 40px;
-     color: #fff;
+     color: #ffffff98;
      font-family: 'Poppins', sans-serif;
      font-style: normal;
      font-weight: normal;
      font-size: 18px;
-     line-height: 25px;
+     line-height: 26px;
+     letter-spacing: 0.3px;
  }
 
  /* da 0 a 62 di padding animazione   da sx a dx */
@@ -1913,13 +1914,14 @@ margin-bottom: 100px;
  } 
  .cont-scheda-road-mob ul {
      padding-top: 20px;
-     padding-left: 40px;
-     color: #fff;
+     padding-left: 20px;
+     color:  #ffffff98;
      font-family: 'Poppins', sans-serif;
      font-style: normal;
      font-weight: normal;
      font-size: 18px;
-     line-height: 25px;
+     line-height: 26px;
+     letter-spacing: 0.3px;
  }
  #step-1-foto-mob {
      padding-left: 15px;
