@@ -472,4 +472,18 @@ window.addEventListener('scroll', function() {
        }
     })    
 
+    let numeroHow = document.querySelectorAll('.numero-how');
+    let containerSpiega = document.querySelectorAll('.container-spiega');
+
+    for(let i = 0; i < containerSpiega.length; i++) {
+        containerSpiega[i].addEventListener('mouseenter', function() {
+            numeroHow[i].classList.add('numero-how-acceso');
+        })
+        containerSpiega[i].addEventListener('mouseleave', function() {
+            numeroHow[i].classList.remove('numero-how-acceso');
+        })
+    }
+
+    
+
     // popup spigazione HOW TO BUY

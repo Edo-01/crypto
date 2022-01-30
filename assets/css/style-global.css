@@ -1219,8 +1219,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#20242B;
+    background-color: #20242B;
+    transition: 0.6s;
 }
+.numero-how-acceso {
+    background-color: #464F60;
+    transition: 0.6s;
+}
+
 .riga-orizz {
     border: 1px solid rgb(134, 134, 134);
     width: 90%;
