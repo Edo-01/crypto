@@ -104,10 +104,15 @@
       100% {transform: translateY(0px);}
     }
   .btn-sugiu {
-      animation-name: su-giu;
+      /* animation-name: su-giu;
       animation-duration: 0.35s;
       animation-fill-mode: forwards;
-      animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out; */
+      transform: translateY(-4px);
+      transition: transform 0.25s;
+    }
+    .btn-sugiu-via {
+      transition: 0.3s;
     }
     /* bottoni */
     @keyframes ruotaa {

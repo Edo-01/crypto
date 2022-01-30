@@ -81,6 +81,7 @@ contBtn[i].addEventListener('mouseenter', function() {
 })
 contBtn[i].addEventListener('mouseleave', function() {
     contBtn[i].classList.remove('btn-sugiu');
+    contBtn[i].classList.add('btn-sugiu-via');
 })
 }
 
@@ -461,9 +462,6 @@ window.addEventListener('scroll', function() {
         sezioneDettagliBuy.classList.remove('dettagli-howToBuy-nascosta');
     });
     
-
-
- 
 
     document.body.addEventListener('click', function() {
        if(event.target !== openDetailHowBuy) {
